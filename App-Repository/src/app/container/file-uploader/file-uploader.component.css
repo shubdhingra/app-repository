@@ -1,0 +1,20 @@
+.input-group {
+  width: 90%;
+}
+
+.icon_img {
+  height: 6em;
+}
+
+.icon-file {
+  visibility: hidden;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.hidden-element {
+  visibility: hidden;
+}

@@ -1,0 +1,15 @@
+<div class="form-group required">
+  <input type="file" accept="image/jpg, image/jpeg, image/png" id="uploadEntity" name="img[]" class="hidden-element"
+         (change)="onFileChange($event)">
+  <label class="control-label">Icon (Image size should not be more than 5MB)</label>
+  <div class="input-group" (click)="invokeFileUpload()">
+    <input type="text" class="form-control input-group-sm" disabled placeholder="e.g. jpeg, jpg, png"
+           style="cursor: pointer;" name="imageName" [(ngModel)]="app.displayName" #fileInput/>
+    <span class="input-group-btn">
+			    <button class="browse btn btn-sm btn-group-sm" type="button">
+				  <i class="glyphicon glyphicon-search"></i> Browse
+			    </button>
+      </span>
+  </div>
+</div>
+<img class="icon_img img-thumbnail" height="6em" id="fileCanvas" alt="Application&#013;Icon"/>

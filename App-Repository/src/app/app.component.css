@@ -1,0 +1,129 @@
+.mindsphereBar__mindsphereTitle:hover {
+  color: #fff !important
+}
+
+.mindsphereBar__mindsphereTitle i.ms_mindsphere-small {
+  font-family: 'mindsphere' !important;
+  font-size: 19px;
+  padding-right: 0.5em
+}
+
+.mindsphereBar__mindsphereTitle:after {
+  border-right-width: 0.5px
+}
+
+
+.mindsphereBar__mindsphereTitle i.ms_mindsphere-small {
+  font-family: 'mindsphere' !important;
+  font-size: 19px;
+  padding-right: 0.5em
+}
+.noDecorations{
+  text-decoration: none !important;
+}
+
+.mindsphereBar__mindsphereTitle {
+  position: relative;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  flex: 1;
+  justify-content: center;
+  font-size: 10px !important;
+  font-family: "Siemens Sans Roman", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility
+}
+
+.mindsphereBar {
+  flex-basis: 32px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center
+}
+
+.mainHeader {
+  flex-basis: 32px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center
+}
+
+
+.mainContent .container__section, .container .container__section {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%
+}
+
+.mainHeader {
+  background-color: #3d464e
+}
+.mainHeader__appExit, .mainHeader__appSupport {
+  box-sizing: border-box;
+
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: "Siemens Sans Roman", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  float: right;
+}
+.mainHeader__appIcon, .mainHeader__appTitle {
+  box-sizing: border-box;
+  float: left;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: "Siemens Sans Roman", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  position: relative
+}
+
+.mainHeader__appIcon:after, .mainHeader__appTitle:after, .mainHeader__appExit:after, .mainHeader__appSupport:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  content: '';
+  background-image: -owg-linear-gradient(to bottom, #36373c, rgba(207, 207, 205, 0.2));
+  background-image: -webkit-linear-gradient(to bottom, #36373c, rgba(207, 207, 205, 0.2));
+  background-image: -moz-linear-gradient(to bottom, #36373c, rgba(207, 207, 205, 0.2));
+  background-image: -o-linear-gradient(to bottom, #36373c, rgba(207, 207, 205, 0.2));
+  background-image: linear-gradient(to bottom, #36373c, rgba(207, 207, 205, 0.2));
+  width: 1px
+}
+
+.mainHeader__appIcon, .mainHeader__appExit, .mainHeader__appSupport {
+  width: 65px
+}
+
+.mainHeader__appIcon > a, .mainHeader__appIcon > a:visited, .mainHeader__appExit > a, .mainHeader__appExit > a:visited, .mainHeader__appSupport > a, .mainHeader__appSupport > a:visited {
+  color: #FFF
+}
+
+.mainHeader__appTitle {
+  flex: 1;
+  margin: 0 0 0 1em;
+  color: #FFF;
+  justify-content: left;
+  font-size: 16px
+}
+
+
