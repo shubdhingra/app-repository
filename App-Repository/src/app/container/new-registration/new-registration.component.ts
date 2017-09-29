@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Application} from "../../../models/application.model";
-import {RegisterService} from "services/register.service";
-import {Observable} from "rxjs/Observable";
-import {Observer} from "rxjs/Observer";
+import {Application} from '../../../models/application.model';
+import {RegisterService} from 'services/register.service';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-new-registration',
@@ -11,23 +10,33 @@ import {Observer} from "rxjs/Observer";
 })
 export class NewRegistrationComponent implements OnInit {
 
-  app:Application;
-  public updateAppListObservable: Observable<Application []>;
-  private updateAppListObserver: Observer<Application []>;
+  app: Application;
+  temp: Application;
+
+  appList = [];
 
   constructor(
     public registerService: RegisterService) {
     this.app = new Application();
-    this.updateAppListObservable = new Observable(observer =>
-      this.updateAppListObserver = observer);
+
   }
 
   ngOnInit() {
   }
 
   registerApp() {
-    this.registerService.registerNewApp(this.app);
-    this.updateAppListObserver.next(this.registerService.appList);
+    $(document).ready(function(){
+      $('button').click(function(){
+        $('div').animate({left: '500px'});
+      });
+    });
+
+    this.temp = JSON.parse(JSON.stringify(this.app));
+    const index = this.appList.findIndex(x => x.name === this.temp.name );
+    if (index === -1) {
+      this.appList.push(this.temp);
+    }
+    this.registerService.registerNewApp(this.appList);
   }
 
 

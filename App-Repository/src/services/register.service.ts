@@ -1,28 +1,26 @@
-import { Injectable } from '@angular/core';
-import {Application} from "../models/application.model";
-import {Observable} from "rxjs/Observable";
-import {Observer} from "rxjs/Observer";
+import {Injectable, OnInit} from '@angular/core';
+import {Application} from '../models/application.model';
+
 
 @Injectable()
-export class RegisterService {
+export class RegisterService implements OnInit {
 
-  appList: Application [];
+  appList: Application[];
 
 
 
   constructor() {
+    this.appList = [];
+  }
 
-    // this.updateAppListObservable.share();
+  ngOnInit() {
 
+  }
+  registerNewApp(appList: Application[]) {
+    this.appList = appList;
+    console.log(this.appList);
 
   }
 
-  registerNewApp(app: Application) {
-    console.log(app);
-    this.appList.push(app);
-
-
-
-  }
 
 }

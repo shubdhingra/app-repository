@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {RegisterService} from '../../../services/register.service';
+import {Application} from '../../../models/application.model';
 
 @Component({
   selector: 'app-registered-apps',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisteredAppsComponent implements OnInit {
 
-  constructor() { }
+  app: Application;
+  appList: Application[];
+
+  constructor(public registerService: RegisterService) {
+  }
 
   ngOnInit() {
+
+
   }
 
 }

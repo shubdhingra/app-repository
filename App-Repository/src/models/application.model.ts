@@ -1,7 +1,8 @@
 export class Application {
 
-  name : string;
-  displayname : string;
-  image : any;
+  name: string;
+  tile: string;
+  image: any;
   configurations: Map<string, string>;
+  url: string;
 }
